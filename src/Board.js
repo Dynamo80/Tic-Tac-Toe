@@ -1,5 +1,6 @@
 import React from "react";
 import Square from "./Square";
+import './App.css'
 
 function Board( {value, onClick} ) {
     const renderSquare = (i) => {
@@ -7,7 +8,7 @@ function Board( {value, onClick} ) {
     }
 
     return(
-        <div>
+        <div className="board">
         <div className="board-row">
             {renderSquare(0)} {renderSquare(1)} {renderSquare(2)}
         </div>
@@ -17,7 +18,7 @@ function Board( {value, onClick} ) {
         </div>
 
         <div className="board-row">
-        {renderSquare(7)} {renderSquare(7)} {renderSquare(8)}
+        {renderSquare(6)} {renderSquare(7)} {renderSquare(8)}
     </div>
     </div>
     )

@@ -1,0 +1,18 @@
+* {
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+}
+
+.square {
+  height: 30px;
+  border: 2px white solid;
+  width: 30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#restart {
+  height: 40px;
+  width: 60px;
+  border-radius: 7px;
+}

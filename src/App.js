@@ -1,6 +1,7 @@
 import React from "react";
 import Board from './Board'
 import { useState } from "react";
+import './App.css'
 
 function App() {
   const [squares, setSquares] = useState(Array(9).fill(null))
@@ -49,7 +50,7 @@ function App() {
         {winner ? (
           <p>{winner} Wins!</p>
         ): (<p>Next Player {xIsNext ? "X" : "O"}</p>) }
-        <button onClick={restart}>Restart</button>
+        <button onClick={restart} id="restart">Restart</button>
       </div>
     )
   }
